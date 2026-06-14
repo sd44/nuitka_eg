@@ -48,5 +48,4 @@ jobs:
             release/*.exe
             release/*.bin
             release/*.app/**/*
-            release/*.dist/**/*
           include-hidden-files: true
