@@ -6,7 +6,7 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [macos-latest, ubuntu-22.04, ubuntu-22.04-arm, windows-2022]
 
     runs-on: ${{ matrix.os }}
 
@@ -33,7 +33,6 @@ jobs:
           script-name: main.py
           mode: onefile
           enable-plugins: pyside6
-          include-qt-plugins: sensible
           disable-console: true
           lto: yes
           output-dir: release
