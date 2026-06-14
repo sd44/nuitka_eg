@@ -46,5 +46,6 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: foo-example-${{ runner.os }}
-          path: release/**/*
+          path: |
+            release/foo-example*
           include-hidden-files: true
