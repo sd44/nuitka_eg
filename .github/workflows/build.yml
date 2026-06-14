@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Check-out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.13'
           architecture: 'x64'
@@ -38,10 +38,10 @@ jobs:
           output-dir: release
           company-name: My Company
           file-version: 0.1.0
-          output-filename: foo-example
+          output-file: foo-example
 
       - name: Upload Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: foo-example-${{ runner.os }}
           path: |
