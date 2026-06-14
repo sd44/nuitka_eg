@@ -33,12 +33,14 @@ jobs:
           script-name: main.py
           mode: onefile
           enable-plugins: pyside6
+          include-qt-plugins: sensible
           disable-console: true
           lto: yes
           output-dir: release
+          output-file: foo-example
           company-name: My Company
           file-version: 0.1.0
-          output-file: foo-example
+          report: true
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v7
