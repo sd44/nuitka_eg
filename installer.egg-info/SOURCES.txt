@@ -1,0 +1,8 @@
+README.md
+main.py
+pyproject.toml
+installer.egg-info/PKG-INFO
+installer.egg-info/SOURCES.txt
+installer.egg-info/dependency_links.txt
+installer.egg-info/requires.txt
+installer.egg-info/top_level.txt
