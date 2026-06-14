@@ -37,6 +37,7 @@ jobs:
           lto: yes
           output-dir: release
           company-name: My Company
+          file-version: 0.1.0
           output-filename: foo-example
 
       - name: Upload Artifacts
