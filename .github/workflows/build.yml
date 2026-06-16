@@ -38,7 +38,6 @@ jobs:
           output-file: foo-example
           company-name: My Company
           file-version: 0.1.0
-          report: true
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v7
